@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./img/App.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class='header relative xl:w-[100%]  h-[700px] border-1 bg-cover  '>
+        <div class=' bg-[rgba(0,0,0,0.7)] w-[100%] h-[100%]'>
+            <div class='grid grid-cols-2 lg:w-[100%] h-[50px]'>
+                <div class=''>
+                    <img src='img/Netflix_Logo_PMS.png' class='w-[210px] h-[110px] ms-[130px] mt-[10px] ' />
+                </div>
+                <div class=' text-white mt-[45px] '>
+                    <select name="languagesection"
+                        class=' rounded-[5px] px-[25px] py-1  text-white  bg-transparent border-[1px] ms-[9rem] me-4'
+                        id="">
+                        <option value="English" class='text-black'>English</option>
+                        <option value="Hindi" class='text-black'>Hindi</option>
+                    </select>
+                    <button class='bg-[red] text-white px-[15px] font-semibold py-[4px]
+                     rounded-[5px] border-[rgba(0,0,0,0.2)] '> Sign in</button>
+                </div>
+            </div>
+
+            <div class='grid grid-cols-1 absolute top-[280px] left-[168px] p-[10px] text-white'>
+                <h1 class='text-[50px] font-bold'>Unlimited movies, TV shows and more</h1>
+                <p class='text-center text-[26px] pt-2'>Watch anywhere. Cancel anytime.</p>
+                <p class='text-center pt-5 text-[20px]'>Ready to watch? Enter your email or mobile number to create
+                    or restart your membership.</p>
+                <div class='grid grid-cols-2 p-4 '>
+                    <input type="text"
+                        class='w-[80%] py-4 bg-transparent rounded-[4px] border-[1px] p-2 ml-[130px] '
+                        placeholder='Email or mobile number' />
+                    <button class='bg-[red] w-[200px] rounded-md py-1 text-[25px] ml-[60px]'>Get Started</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- section1 -->
+
+    <div class='grid grid-cols-1 justify-center border-t-[8px] border-t-[grey] xl:w-[100%] bg-black'>
+        <div class='grid grid-cols-2 lg:w-[80%] m-auto items-center py-[90px]'>
+            <div class='text-white text-center'>
+                <h1 class='text-center text-[48px] font-bold'>Enjoy on your TV
+                </h1>
+                <p class='text-left text-[22px] pt-[16px] ps-[61px]'>Watch on smart TVs, PlayStation, Xbox,
+                    Chromecast, Apple TV, Blu-ray players
+                    and more.</p>
+            </div>
+            <div class='relative'>
+                <video class=' absolute w-[73%] bottom-[25%] left-[13%] z-[1]' autoplay playsinline muted loop>
+                    <source  src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v'/>
+                </video>
+                <img src='./img/tv.png' class=' relative z-[2]' />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- section 2 -->
+
+    <div class='grid grid-cols-1 justify-center border-t-[8px] border-t-[grey] xl:w-[100%] bg-black'>
+        <div class='grid grid-cols-2 lg:w-[80%] m-auto items-center pt-[80px] pb-[70px]'>
+            <div class=''>
+                <img src='./img/mobile-0819.jpg' />
+                <div class='w-[55%] h-[100px] border-[2px] bg-black border-[grey] rounded-xl grid grid-cols-3 relative top-[-127px] left-[111px]'>
+                    <img src='./img//boxshot.png' class='w-[88%] p-[15px]' />
+                    <div class='grid grid-cols-1'>
+                        <span class='text-white text-[12px] font-bold pt-[30px]'>Stranger Things</span>
+                        <span class='text-[#0059B9] pb-[24px]'>Downloading...</span>
+                    </div>
+                    <img src='./img/download-icon (1).gif' alt="" class='w-[75%] m-[16px]' />
+
+
+                </div>
+
+            </div>
+            <div class='text-white text-center '>
+                <h1 class='text-left leading-[53px] text-[50px] font-bold ps-[3.75rem]'>Download your shows to watch offline
+                </h1>
+                <p class='text-left text-[22px] pt-[16px] ps-[61px]'> Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- section 3 -->
+    <div class='grid grid-cols-1 justify-center border-t-[8px] border-t-[grey] xl:w-[100%] bg-black'>
+        <div class='grid grid-cols-2 lg:w-[80%] m-auto items-center py-[90px]'>
+            <div class='text-white text-center'>
+                <h1 class='text-center text-[48px] font-bold'>Watch everywhere
+                </h1>
+                <p class='text-left text-[22px] pt-[16px] ps-[55px]'>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class='relative'>
+                <video class=' absolute w-[61%] bottom-[45%] left-[19%] z-[1]' autoplay playsinline muted loop>
+                    <source src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v' />
+                </video>
+                <img src='./img/device-pile-in.png' class=' relative z-[2]' />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- section 4 -->
+    <div class='grid grid-cols-1 justify-center border-t-[8px] border-t-[grey] xl:w-[100%] bg-black'>
+        <div class='grid grid-cols-2 lg:w-[80%] m-auto items-center pt-[80px] pb-[70px]'>
+            <div class=''>
+                <img src='./img/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png' alt="" />
+            </div>
+            <div class='text-white text-center '>
+                <h1 class='text-left leading-[65px] text-[50px] font-bold ps-[3.75rem]'> Create profiles for kids
+                </h1>
+                <p class='text-left text-[22px] pt-[16px] ps-[66px] leading-[32px]'> Send children on adventures with their favourite characters in the space made just for them-free with your membership.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- faq section -->
+
+    <div class='grid grid-cols-1 justify-center border-t-[8px] border-t-[grey] xl:w-[100%] bg-black'>
+        <div class='grid grid-cols-1 lg:w-[80%] m-auto items-center pt-[80px] pb-[70px]'>
+            <h1 class='  text-white text-center leading-[65px] text-[50px] font-bold ps-[3.75rem] mb-5'>Frequently Asked Questions</h1>
+
+            <div>
+                <h3 class='text-white text-left bg-[#414141] text-[24px] font-600 p-5 my-1'> What is Netflix ?</h3>
+                <h3 class='text-white text-left bg-[#414141] text-[24px] font-600 p-5 my-1'> How much does Netflix cost ?</h3>
+                <h3 class='text-white text-left bg-[#414141] text-[24px] font-600 p-5 my-1'> Where i can watch ?</h3>
+                <h3 class='text-white text-left bg-[#414141] text-[24px] font-600 p-5 my-1'> How to i cancel ?</h3>
+                <h3 class='text-white text-left bg-[#414141] text-[24px] font-600 p-5 my-1'> What i can watch on netflix?</h3>
+                <h3 class='text-white text-left bg-[#414141] text-[24px] font-600 p-5 my-1'>Is netflix is good for kids?</h3>
+
+                <p class="text-white text-center text-[20px] font-600 p-5 my-3">Ready to watch? Enter your email or mobile number to create or restart your membership.</p>
+
+                <input type="text"
+                class='w-[40%] py-4  text-center bg-transparent rounded-[4px] border-[1px] p-2 ml-[150px] '
+                placeholder='Email or mobile number' />
+
+                <button class='bg-[red] text-white px-[50px] font-semibold py-[18px]
+                rounded-[5px] border-[rgba(0,0,0,0.2)] '> Get Started</button>
+            
+            </div>
+               
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class='grid grid-cols-1 text-white bg-black  border-t-[8px] border-t-[grey]'>
+        <div class='w-[80%] py-[70px] text-left  m-auto'>
+            <p >Questions?<span class=' border-b-white'>Call 000-800-919-1694
+            </span></p>
+            <div class='grid grid-cols-4 gap-4 py-5'>
+                <div>
+                    <ul>
+                        <li class='text-[14px] py-1 '>FAQ</li>
+                        <li class='text-[14px] py-1 '>Investor Relations</li>
+                        <li class='text-[14px] py-1 '>Privacy</li>
+                        <li class='text-[14px] py-1 '>Speed Test</li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <ul>
+                        <li class='text-[14px] py-1 '>Help Centre</li>
+                        <li class='text-[14px] py-1 '>Jobs</li>
+                        <li class='text-[14px] py-1 '>Cookie Preferences</li>
+                        <li class='text-[14px] py-1 '>Legal Notices</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li class='text-[14px] py-1 '>Account</li>
+                        <li class='text-[14px] py-1 '>Ways to Watch</li>
+                        <li class='text-[14px] py-1 '>Corporate Information</li>
+                        <li class='text-[14px] py-1 '>Only on Netflix</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li class='text-[14px] py-1 '>Media Centre</li>
+                        <li class='text-[14px] py-1 '>Terms of Use</li>
+                        <li class='text-[14px] py-1 '>Privacy</li>
+                        <li class='text-[14px] py-1 '>Contact Us</li>
+                    </ul>
+
+                </div>
+            </div>
+            <select name="languagesection" class=' rounded-[5px] px-[25px] py-1  text-white  bg-transparent border-[1px] ms-[3px] me-4' id="">
+                <option value="English" class='text-black'>English</option>
+                <option value="Hindi" class='text-black'>Hindi</option>
+            </select>
+            <p className='text-[15px] py-4 px-2'>Netflix India</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
